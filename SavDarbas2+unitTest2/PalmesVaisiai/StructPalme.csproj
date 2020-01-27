@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SavDarbas2+unitTest2\SavDarbas2+unitTest2.csproj">
+      <Project>{50968203-2a35-41c2-bdc6-ddf4d27705c2}</Project>
+      <Name>SavDarbas2+unitTest2</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
