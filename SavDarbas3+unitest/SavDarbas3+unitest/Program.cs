@@ -51,7 +51,7 @@ namespace SavDarbas3_unitest
 
         public bool IsPointInReactangle(Point taskas)
         {
-            if (taskas.taskasX > TopLeft.taskasX) && (BottomRight.taskasX > taskas.taskasX)
+            if (TopLeft.taskasX > taskas.taskasX) && (BottomRight.taskasX > taskas.taskasX)
             {
                 return true;
             }
@@ -69,7 +69,7 @@ namespace SavDarbas3_unitest
         {
             Point point = new Point(15, 3);
             Point topLeft = new Point(6, 9);
-            Point buttomRight = new Point(5, 8);
+            Point bottomRight = new Point(5, 8);
             Rectangle rectangle = new Rectangle(topLeft, bottomRight);
 
             Console.WriteLine("Kvadrato taskai: {0}", rectangle.IsPointInReactangle(point));
